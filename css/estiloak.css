@@ -50,6 +50,7 @@
                 padding: 1.968503937007874015748031496063%;
                 float: left;
                 background-color:#378b29 ;
+                width: 96%;
                 box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
                 h2{
 
@@ -68,7 +69,7 @@
             }
             
                 div{
-                    font-family: "Times New Roman", serif;
+                    font-family: "Britannic Bold", "Britannic";
                     ;
                     text-align: center;
                     color: azure;
@@ -86,15 +87,15 @@
 
             nav{
                 border: 1px dashed rgb(0, 0, 0);
-                margin-left: 1.968503937007874015748031496063%;
+                
 				margin-bottom: 1.968503937007874015748031496063%;
 				
                 padding: 1.968503937007874015748031496063%;
-                width: 91.863517060367454068241469816273%;
+                width: 96%;
                 background-color: #8ae262;
                
 				li{
-					border: 1px dashed rgb(0, 0, 0);
+					
 					display: inline;
 					margin: 0.65616797900262467191601049868766%;
                
