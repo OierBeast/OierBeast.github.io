@@ -4,6 +4,7 @@
                 border: 1px dashed black;
 				max-width: 762px;
                 margin: auto;
+                height: 100vh;
                 
                 background: url('../irudiak/Gabonak.jpg');
                 background-size:cover;
@@ -64,6 +65,8 @@
                 flex-wrap: wrap;
                 gap: 20px;
              margin-top: 40px;
+             margin-bottom:20px;
+             
              
              img{
                 box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
@@ -89,7 +92,7 @@
             nav{
                 border: 1px dashed rgb(0, 0, 0);
                 
-				margin-bottom: 1.968503937007874015748031496063%;
+				margin-bottom: 0.168503937007874015748031496063%;
 				
                 padding: 1.968503937007874015748031496063%;
                 width: 96%;
@@ -131,4 +134,11 @@
                 -ms-transform: scale(1.2); /* IE 9 */
                 -webkit-transform: scale(1.2); /* Safari 3-8 */
                 transform: scale(1.2); 
+            }
+
+            .Testua {
+               
+                font-weight: bold; /* Negrita opcional */
+                text-shadow: 1px 1px 5px #333;
+                text-align: center;
             }
