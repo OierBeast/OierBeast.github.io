@@ -6,6 +6,7 @@
                 margin: auto;
                 height: 100vh;
                 
+                
                 background: url('../irudiak/Gabonak\ fondo.PNG');
                 background-size:cover;
                 background-repeat: no-repeat;
@@ -86,7 +87,7 @@
                     text-align: center;
                     color: azure;
                     border: 1px dashed rgb(0, 0, 0);
-                background: url('../irudiak/patroia.jpg');
+                
                 background-size:100px 100px;
                     padding: 1%;
                     font-size: 20px; 
@@ -163,7 +164,8 @@
             .erosi {
                 font-family: "Britannic Bold", "Britannic";
                 ;
-                text-align:justify;
+                text-align: justify;
+                padding: 2%;
                 color: azure;
                 border: 1px dashed rgb(0, 0, 0);
             background: url('../irudiak/patroia.jpg');
@@ -171,7 +173,16 @@
                
                 font-size: 20px; 
                 text-shadow: 1px 1px 5px #333;
+               
                 box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-              width: 90%;
+              width: 95%;
               height: 400px;
+            }
+
+           .guztira {
+            
+            margin-top: 2%;
+                background-color: white; /* Fondo blanco */
+                color: rgb(31, 30, 30); /* Texto negro para resaltar */
+                border: 2px solid #ccc; /* Opcional: borde */
             }
