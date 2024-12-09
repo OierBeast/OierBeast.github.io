@@ -4,9 +4,8 @@
                 border: 1px dashed black;
 				max-width: 762px;
                 margin: auto;
-                height: 100vh;
-                
-                background: url('../irudiak/Gabonak.jpg');
+                height: 100vh;  
+                background: url('../irudiak/Gabonak\ fondo.PNG');
                 background-size:cover;
                 background-repeat: no-repeat;
                 background-position: center;
