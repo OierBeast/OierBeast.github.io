@@ -54,20 +54,24 @@
                 background-color:#378b29 ;
                 width: 96%;
                 box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-                background-image: url('../irudiak/Gabonak\ fondo.PNG');
                 h2{
 
                     font-size: 90px;
                     text-shadow: 1px 1px 2px #333;
                 }
+                img{
+                    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+                }
             }
             main section{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 20px;
+                gap: 0px;
              margin-top: 40px;
-             margin-bottom:20px;
-             
+             margin-bottom:5px;
+             margin-left: 20px;
+             line-height: 1.8;
+          
              
              img{
                 box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
@@ -82,13 +86,10 @@
                 background: url('../irudiak/patroia.jpg');
                 background-size:100px 100px;
                     padding: 1%;
-                    font-size: 20px; 
+                    font-size: 5px; 
                     text-shadow: 1px 1px 5px #333;
                     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
                     margin: 0 auto;
-                }
-                .opari {
-                    background: url('../irudiak/patroia6.jpg');
                 }
                 
             }
@@ -140,15 +141,29 @@
                 transform: scale(1.2); 
             }
 
-            .opari:hover {
-                -ms-transform: scale(1.2); /* IE 9 */
-                -webkit-transform: scale(1.2); /* Safari 3-8 */
-                transform: scale(1.2); 
-            }
-
             .Testua {
                
                 font-weight: bold; /* Negrita opcional */
                 text-shadow: 1px 1px 5px #333;
                 text-align: center;
+                margin: 10px;
+                line-height: 1.8;
+                transition: color 0.3s ease, font-weight 0.3s ease;
+        }
+            .Helbidea{
+ 
+                font-weight: bold; /* Negrita opcional */
+                text-shadow: 1px 1px 5px #333;
+                text-align: center;
+                margin: 10px;
+                line-height: 1.8;
+                transition: color 0.3s ease, font-weight 0.3s ease;
+                font-size: small;
+
+            }
+
+            .Helbidea:hover{
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.2); /* Safari 3-8 */
+                transform: scale(1.3);
             }

@@ -6,7 +6,7 @@
                 margin: auto;
                 height: 100vh;
                 
-                background: url('../irudiak/Gabonak.jpg');
+                background: url('../irudiak/Gabonak\ fondo.PNG');
                 background-size:cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -54,7 +54,10 @@
                 background-color:#378b29 ;
                 width: 96%;
                 box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-                background-image: url('../irudiak/Gabonak\ fondo.PNG');
+                background: url('../irudiak/patroia8.jpg');
+                image-resolution: 10px, 10px;
+                background-repeat: repeat;
+                
                 h2{
 
                     font-size: 90px;
