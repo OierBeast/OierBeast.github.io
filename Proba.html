@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saskia - Carrito de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .cart-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .cart-table th, .cart-table td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .cart-table th {
+            background-color: #f4f4f4;
+        }
+        .cart-table td input {
+            width: 40px;
+            padding: 5px;
+        }
+        .cart-table .total {
+            font-weight: bold;
+        }
+        .cart-table .remove-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .cart-table .remove-btn:hover {
+            background-color: #0056b3;
+        }
+        .total-price {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: right;
+        }
+        .checkout-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .checkout-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Saskia</div>
+        <div class="cart-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produktua</th>
+                        <th>Salneurria</th>
+                        <th>Kopurua</th>
+                        <th>Guztira</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>I</td>
+                        <td>15,99 €</td>
+                        <td><input type="number" value="1" min="1" /></td>
+                        <td>15,99 €</td>
+                        <td><button class="remove-btn">Ezabatu</button></td>
+                    </tr>
+                    <tr>
+                        <td>U2 - The Joshua Tree</td>
+                        <td>15,99 €</td>
+                        <td><input type="number" value="1" min="1" /></td>
+                        <td>15,99 €</td>
+                        <td><button class="remove-btn">Ezabatu</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="total-price">
+            Guztira: 31,98 €
+        </div>
+        <a href="#" class="checkout-btn">Eskaria egin</a>
+    </div>
+</body>
+</html>
