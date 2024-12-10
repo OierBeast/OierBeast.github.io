@@ -1,106 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saskia - Carrito de Compras</title>
+    <meta charset="UTF-8">
+    <title>Hasiera</title>
+    <link rel="stylesheet" href="css/estiloak.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+            height: 100%;
+        }
+
+        body {
+            background-color: white; /* Fondo blanco para todo el cuerpo */
+            height: 100%;
+            color: #333;
+            div{
+                background-color: white;
+            }
+        }
+        nav{
+            width:auto;
         }
         .header {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
         }
-        .cart-table {
-            width: 100%;
-            margin-top: 20px;
-            border-collapse: collapse;
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
-        .cart-table th, .cart-table td {
+
+        .menu li {
             padding: 8px;
-            text-align: left;
-            border: 1px solid #ddd;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         }
-        .cart-table th {
-            background-color: #f4f4f4;
+
+        .menu li:hover {
+            background-color: #0099cc;
         }
-        .cart-table td input {
-            width: 40px;
-            padding: 5px;
+
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         }
-        .cart-table .total {
-            font-weight: bold;
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
         }
-        .cart-table .remove-btn {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        .cart-table .remove-btn:hover {
-            background-color: #0056b3;
-        }
-        .total-price {
+
+        .main-content {
+            background-color: white; /* Fondo blanco para el contenido principal */
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
             margin-top: 20px;
-            font-size: 18px;
-            text-align: right;
         }
-        .checkout-btn {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
         }
-        .checkout-btn:hover {
-            background-color: #218838;
+
+        .col-3, .col-6, .col-9, .col-12 {
+            padding: 15px;
+        }
+
+        [class*="col-"] {
+            box-sizing: border-box;
+        }
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+
+        @media only screen and (min-width: 768px) {
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">Saskia</div>
-        <div class="cart-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produktua</th>
-                        <th>Salneurria</th>
-                        <th>Kopurua</th>
-                        <th>Guztira</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>I</td>
-                        <td>15,99 €</td>
-                        <td><input type="number" value="1" min="1" /></td>
-                        <td>15,99 €</td>
-                        <td><button class="remove-btn">Ezabatu</button></td>
-                    </tr>
-                    <tr>
-                        <td>U2 - The Joshua Tree</td>
-                        <td>15,99 €</td>
-                        <td><input type="number" value="1" min="1" /></td>
-                        <td>15,99 €</td>
-                        <td><button class="remove-btn">Ezabatu</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="total-price">
-            Guztira: 31,98 €
-        </div>
-        <a href="#" class="checkout-btn">Eskaria egin</a>
+
+<div class="header">
+    <h1>HoH! Hoh! Hoh!</h1>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Hasiera</a></li>
+        <li><a href="katalogoa.html">Katalogoa</a></li>
+        <li><a href="nobedadeak.html">Nobedadeak</a></li>
+        <li><a href="Gure-dendak.html">Gure dendak</a></li>
+        <li><a href="kontaktua.html">Kontaktua</a></li>
+    </ul>
+</nav>
+
+<div class="row">
+    <div class="col-3 col-s-3 menu">
+        <ul>
+            <li>The Flight</li>
+            <li>The City</li>
+            <li>The Island</li>
+            <li>The Food</li>
+        </ul>
     </div>
+
+    <div class="col-6 col-s-9 main-content">
+        <h1 class="Testua">¡Ongi etorri!</h1>
+        <section>
+            <h2>Orrialde honetan gabonetako artikulu desberdinak
+                aurkituko dituzu. Arbola batetik, opari misteriotsu batera...
+            </h2>
+            <h3>¿Artikulu baten bila? ¡Sartu eta ea aurkitzen duzun!</h3>
+            <button>CLICK</button>
+        </section>
+    </div>
+
+    <div class="col-3 col-s-12">
+        <div class="aside">
+            <h2>What?</h2>
+            <p>Chania is a city on the island of Crete.</p>
+            <h2>Where?</h2>
+            <p>Crete is a Greek island in the Mediterranean Sea.</p>
+            <h2>How?</h2>
+            <p>You can reach Chania airport from all over Europe.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 HoH! Hoh! Hoh!</p>
+    <p>Resize the browser window to see how the content responds to the resizing.</p>
+</footer>
+
 </body>
 </html>
