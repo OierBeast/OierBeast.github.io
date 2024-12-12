@@ -150,8 +150,32 @@
             }
 
             .Testua {
-               
-                font-weight: bold; /* Negrita opcional */
+                font-weight: bold;
                 text-shadow: 1px 1px 5px #333;
-                text-align: center;
+                text-align: left;
+                float: left;
+                margin-right: 10px;
+                width: 50%; /* El texto ocupará el 50% del ancho del contenedor */
+                max-width: 600px; /* Límite máximo para pantallas grandes */
+                line-height: 1.5;
             }
+            
+            
+            .Left {
+                float: left;
+                margin-right: 20px; /* Añade un margen para separar el texto de la imagen */
+                width: 40%; /* Ajusta el tamaño si es necesario */
+                height: 40%;
+            }
+            .flex-container {
+                display: flex; /* Activa Flexbox */
+                align-items: flex-start; /* Alinea los elementos al inicio vertical */
+                gap: 20px; /* Espacio entre la imagen y el texto */
+            }
+            
+            .flex-container img {
+                width: 25%; /* Ajusta el tamaño de la imagen */
+                height: 25%; /* Mantén las proporciones */
+                float: left;
+            }
+            

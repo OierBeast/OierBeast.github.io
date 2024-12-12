@@ -1,0 +1,86 @@
+/* Reset de márgenes y padding */
+* { margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../irudiak/Gabonak\ fondo.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    max-width: 762px;
+    margin: auto;
+    height: 100vh;
+    overflow: scroll;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    background-color: #74d680;
+    padding: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: #8ae262;
+    padding: 1.968503937007874015748031496063%;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0.65%;
+}
+
+main {
+    text-align: center;
+    background-color: #378b29;
+    padding: 2%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.flex-container {
+    display: flex; /* Usar flexbox para alinear horizontalmente */
+    align-items: flex-start; /* Alineación vertical */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    margin: 40px 0;
+}
+
+.flex-container img {
+    width: 30%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantén las proporciones */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el texto */
+.Testua {
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #333;
+    text-align: left;
+    width: 60%; /* El texto ocupará el 60% del contenedor */
+    max-width: 600px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Estilos del botón */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #74d680;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #66c45c;
+}
