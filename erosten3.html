@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+            display: inline-block;
+        }
+        .header a {
+            float: right;
+            color: blue;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .menu {
+            background-color: #e8e8e8;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .table th {
+            background-color: #f2f2f2;
+        }
+        .form, .details {
+            border: 1px dotted #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .form input {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Lea Artibai Ikastetxea</h1>
+        <a href="#">Saskia</a>
+    </div>
+    <div class="menu">
+        <a href="#">Hasiera</a>
+        <a href="#">Katalogoa</a>
+        <a href="#">Nobedadeak</a>
+        <a href="#">Eskaintzak</a>
+        <a href="#">Kontaktua</a>
+    </div>
+    <div class="container">
+        <h2>Eskaria</h2>
+
+        <h3>Produktuak</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Produktua</th>
+                    <th>Salneurria</th>
+                    <th>Kopurua</th>
+                    <th>Guztira</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arbola</td>
+                    <td>15,99 €</td>
+                    <td>1</td>
+                    <td>15,99 €</td>
+                </tr>
+                <tr>
+                    <td>Olentzero</td>
+                    <td>15,99 €</td>
+                    <td>1</td>
+                    <td>15,99 €</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: right;"><strong>Guztira</strong></td>
+                    <td>31,98 €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn">Produktuak aldatu</button>
+
+        <h3>Zure datuak</h3>
+        <div class="details">
+            <p><strong>Izena:</strong> Jose Ramon</p>
+            <p><strong>Abizena:</strong> Olabarria</p>
+            <p><strong>Helbidea:</strong> Xemein Etorbidea 19</p>
+            <p><strong>Herria:</strong> Markina-Xemein</p>
+            <p><strong>Posta-kodea:</strong> 48270</p>
+            <p><strong>Probintzia:</strong> Bizkaia</p>
+            <p><strong>E-maila:</strong> jrolabarria@leartik.eus</p>
+        </div>
+
+        <button class="btn">Zure datuak aldatu</button>
+        <button class="btn">Hurrengoa</button>
+    </div>
+    <div class="footer">
+        &copy; 2020 Lea Artibai Ikastetxea
+    </div>
+</body>
+</html>
