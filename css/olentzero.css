@@ -84,3 +84,9 @@ button {
 button:hover {
     background-color: #66c45c;
 }
+
+img {
+border-radius: 1%;
+max-width: 10%;
+height: auto;
+}
