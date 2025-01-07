@@ -1,17 +1,18 @@
 
             * {margin: 0; padding: 0;} 
             body {
-                border: 1px dashed black;
+               
 				max-width: 762px;
                 margin: auto;
                 height: 100vh;
                 
                  
                 background: url('../irudiak/Gabonak\ fondo.PNG');
-                background-size:cover;
-                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed; /* Hace que el fondo se mantenga fijo mientras haces scroll */
                 background-position: center;
-                overflow: scroll;
+                overflow-y: auto;
+                overflow-x: hidden;
 
                 
                Testua.br{
@@ -97,23 +98,30 @@
                 }
                 
             }
-
-            nav{
-                border: 1px dashed rgb(0, 0, 0);
-                
-				margin-bottom: 0.168503937007874015748031496063%;
-				
-                padding: 1.968503937007874015748031496063%;
+            nav {
+    
+                margin-bottom: 1%;
+                padding: 2%;
                 width: 96%;
                 background-color: #8ae262;
-               
-				li{
-					
-					display: inline;
-					margin: 0.65616797900262467191601049868766%;
-               
-				}
-               
+                border: 2px solid #2e68139a;
+                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            
+            }
+            
+            nav ul {
+                list-style-type: none;
+            }
+            
+            
+            nav li {
+                display: inline;
+                margin: 1%;
+            }
+            nav a, .menu a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: black;
             }
 
 			aside{
@@ -124,8 +132,7 @@
 				width: 33.202099737532808398950131233596%;
 				
 			}
-			
-			footer{
+            footer{
                 border: 1px dashed black;
                 margin: 1.968503937007874015748031496063%;
                 padding: 1.968503937007874015748031496063%;

@@ -1,15 +1,16 @@
 
             * {margin: 0; padding: 0;} 
             body {
-                border: 1px dashed black;
+            
 				max-width: 762px;
                 margin: auto;
                 height: 100vh;
                 background: url('../irudiak/Gabonak\ fondo.PNG');
-                background-size:cover;
-                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed; /* Hace que el fondo se mantenga fijo mientras haces scroll */
                 background-position: center;
-                overflow: scroll;
+                overflow-y: auto;
+                overflow-x: hidden;
 
                 
                
@@ -26,47 +27,52 @@
                 color:white;
             }
             header {
-                border: 1px dashed black;
-                margin: 1.968503937007874015748031496063%;
-                padding: 1.968503937007874015748031496063%;
-                width: 090.863517060367454068241469816273%;
-                height: 50px;
-                color: azure;
+                border: 2px solid #2e68139a;
+                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+                margin: 2%;
+                margin-bottom: 3%;
+                padding: 2%;
+                width: 95%;
+                height: 5%;
+                color: white;
                 background-color: #74d680;
-                h1 {                 
-                    position: absolute;
-                    display: inline-block;
-                    margin-left: 0.968503937007874015748031496063%;  
-                }
-			}
-          
+            }
+            
+            header h1, .header h1 {
+                position: absolute;
+                display: inline-block;
+                margin: 0;
+                margin-left: 0.9685%;
+            }
+            
+            .header a {
+                float: right;
+                color: blue;
+                text-decoration: none;
+                margin-top: 10px;
+            }
+            
             #fondoa {
 
                 background:url('irudiak/patroia.jpg');
-            }
-            main {
+            }main {
                 text-align: center;
                 color: azure;
-                border: 1px dashed rgb(0, 0, 0);
-                margin-top: 10px;
-                margin-left: 0;
-                margin-bottom: 1.968503937007874015748031496063%;
-				margin-right: 0;
-                padding: 1.968503937007874015748031496063%;
-                float: left;
-                background-color:#378b29 ;
-                width: 96%;
+                border: 2px solid #2e68139a; /* Borde del primer bloque */
+                margin: 10px 0 2%; /* Márgenes del segundo bloque */
+                padding: 2%; /* Padding del segundo bloque */
+                background-color: #378b29;
+                width: 96%; /* Ancho del segundo bloque */
                 box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-                background: url('../irudiak/patroia8.jpg');
-                image-resolution: 10px, 10px;
-                background-repeat: repeat;
-                
-                h2{
-
-                    font-size: 90px;
-                    text-shadow: 1px 1px 2px #333;
-                }
+                background: url('../irudiak/patroia50.jpg') repeat;
+                background-size: 50px 50px; /* Patrón más repetido */
             }
+            
+            main h2 {
+                font-size: 90px;
+                text-shadow: 1px 1px 2px #333;
+            }
+            
             main section{
                 display: flex;
                 flex-wrap: wrap;
@@ -98,23 +104,30 @@
                 }
                 
             }
-
-            nav{
-                border: 1px dashed rgb(0, 0, 0);
-                
-				margin-bottom: 0.168503937007874015748031496063%;
-				
-                padding: 1.968503937007874015748031496063%;
+            nav {
+    
+                margin-bottom: 1%;
+                padding: 2%;
                 width: 96%;
                 background-color: #8ae262;
-               
-				li{
-					
-					display: inline;
-					margin: 0.65616797900262467191601049868766%;
-               
-				}
-               
+                border: 2px solid #2e68139a;
+                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            
+            }
+            
+            nav ul {
+                list-style-type: none;
+            }
+            
+            
+            nav li {
+                display: inline;
+                margin: 1%;
+            }
+            nav a, .menu a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: black;
             }
 
 			aside{

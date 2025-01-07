@@ -1,40 +1,31 @@
 body {
-    border: 1px dashed black;
+  
     max-width: 762px;
     margin: auto;
-    height: 100vh;
-    background: url('../irudiak/Gabonak fondo.PNG');
+    min-height: 100vh;
+    background: url('../irudiak/Gabonak\ fondo.PNG');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed; /* Hace que el fondo se mantenga fijo mientras haces scroll */
     background-position: center;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.header {
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-header {
+header, .header {
     border: 1px dashed black;
-    margin: 1.968503937007874015748031496063%;
-    padding: 1.968503937007874015748031496063%;
-    width: 90.863517060367454068241469816273%;
+    margin: 1.9685%;
+    padding: 1.9685%;
+    width: 90.8635%;
     height: 50px;
-    color: azure;
     background-color: #74d680;
+    color: azure;
 }
 
-header h1 {
+header h1, .header h1 {
+    margin: 0;
     position: absolute;
     display: inline-block;
-    margin-left: 0.968503937007874015748031496063%;
-}
-
-.header h1 {
-    margin: 0;
-    display: inline-block;
+    margin-left: 0.9685%;
 }
 
 .header a {
@@ -43,26 +34,30 @@ header h1 {
     text-decoration: none;
     margin-top: 10px;
 }
-
 nav {
+    
+    margin-bottom: 1%;
+    padding: 2%;
+    width: 96%;
     background-color: #8ae262;
-    padding: 1.968503937007874015748031496063%;
-    margin-bottom: 20px;
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
 }
 
 nav ul {
     list-style-type: none;
 }
 
+
 nav li {
     display: inline;
-    margin: 0.65%;
+    margin: 1%;
 }
-
-nav a {
+nav a, .menu a {
     margin: 0 10px;
     text-decoration: none;
-    color: #007BFF;
+    color: black;
 }
 
 .menu {
@@ -71,24 +66,15 @@ nav a {
     border-bottom: 1px solid #ccc;
 }
 
-.menu a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: black;
-}
-
 .container {
     padding: 20px;
     background-image: url();
 }
 
-.form {
-    padding-top: 1%;
-    padding-left: 2%;
-    padding-bottom: 2%;
-    background: url('../irudiak/patroia3.jpg');
+.form, .gabonak {
+    padding: 1% 2% 2%;
+    background: url('../irudiak/patroia3.jpg') repeat;
     background-size: 25px 25px;
-    background-repeat: repeat;
     color: #fffdfd;
     text-shadow: 1px 1px 2px #333;
     border-radius: 1%;
@@ -96,16 +82,27 @@ nav a {
     box-shadow: 1px 1px 30px #333;
 }
 
-.form input {
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form select, form textarea {
     display: block;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin-bottom: 10px;
     padding: 8px;
     border: 1px solid #ac4e4e;
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
     color: #000000;
+    box-sizing: border-box;
 }
 
 .form label {
@@ -143,27 +140,13 @@ nav a {
     text-decoration: none;
 }
 
-.footer {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: gray;
-}
-
-.gabonak {
-    padding-top: 1%;
-    padding-left: 2%;
-    padding-bottom: 2%;
-    background: url('../irudiak/patroia3.jpg');
-    background-size: 25px 25px;
-    background-repeat: repeat;
-    color: #fffdfd;
-    text-shadow: 1px 1px 2px #333;
-    border-radius: 1%;
-    border-color: #ddd;
-    box-shadow: 1px 1px 30px #333;
+footer{
+    border: 1px dashed black;
+    margin: 1.968503937007874015748031496063%;
+    padding: 1.968503937007874015748031496063%;
+    width: 91.863517060367454068241469816273%;
+    clear: left;
+    background-color: azure;
 }
 
 h1 {
@@ -177,25 +160,11 @@ h1 {
     border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer{
+    border: 1px dashed black;
+    margin: 1.968503937007874015748031496063%;
+    padding: 1.968503937007874015748031496063%;
+    width: 91.863517060367454068241469816273%;
+    clear: left;
+    background-color: azure;
+}

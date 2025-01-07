@@ -1,154 +1,260 @@
+
 body {
-    border: 1px dashed black;
-				max-width: 762px;
-                margin: auto;
-                height: 100vh;
-                background: url('../irudiak/Gabonak\ fondo.PNG');
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                overflow: hidden;
+    max-width: 90%; /* Ajusta el ancho máximo al 90% del viewport */
+    margin: auto;
+    min-height: 100vh;
+    background: url('../irudiak/Gabonak\ fondo.PNG');
+    background-size: cover;
+    background-attachment: fixed; /* Hace que el fondo se mantenga fijo mientras haces scroll */
+    background-position: center;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-.header {
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-}
+
+
+
 header {
-    border: 1px dashed black;
-    margin: 1.968503937007874015748031496063%;
-    padding: 1.968503937007874015748031496063%;
-    width: 090.863517060367454068241469816273%;
-    height: 50px;
-    color: azure;
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin: 2%;
+    margin-bottom: 3%;
+    padding: 2%;
+    width: 95%;
+    height: 5%;
+    color: white;
     background-color: #74d680;
-    h1 {                 
-        position: absolute;
-        display: inline-block;
-        margin-left: 0.968503937007874015748031496063%;  
-    }
 }
-.header h1 {
-    margin: 0;
+
+header h1, .header h1 {
+    
     display: inline-block;
+    margin: 0;
+    margin-left: 0.9685%;
 }
+
 .header a {
     float: right;
     color: blue;
     text-decoration: none;
     margin-top: 10px;
 }
-nav {
-    background-color: #8ae262;
-    padding: 1.968503937007874015748031496063%;
-    margin-bottom: 20px;
+
+header {
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin: 2%;
+    margin-bottom: 3%;
+    padding: 2%;
+    width: 95%;
+    height: 5%;
+    color: white;
+    background-color: #74d680;
 }
 
-nav ul {
-    list-style-type: none;
+
+/* Estilos para el menú de navegación */
+nav {
+    
+    margin-bottom: 1%;
+    padding: 2%;
+    width: 96%;
+    background-color: #8ae262;
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
 }
 
 nav li {
     display: inline;
-    margin: 0.65%;
+    margin: 1%;
 }
+
 
 .menu {
     background-color: #941212;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
+
 .menu a {
     margin-right: 15px;
     text-decoration: none;
     color: black;
 }
+
 .container {
+    width: 100%; /* Asegurar el uso completo del espacio */
+    max-width: 800px; /* Aumentar el tamaño máximo */
+    margin: auto;
     padding: 20px;
-    background-image: url();
+}
+
+table {
+    width: 100%; /* Hacer que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    color: black;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Añade bordes más visibles */
+    padding: 15px; /* Aumenta el espacio entre texto y bordes */
+    text-align: left; /* Alineación del texto */
+}
+
+th {
+    background-color: #f4f4f4; /* Fondo más claro para encabezados */
+    font-weight: bold; /* Negrita para destacar */
+}
+
+td {
+    background-color: #fff; /* Fondo blanco para visibilidad */
+}
+
+button.btn {
+    padding: 12px 20px; /* Botones más grandes */
+    font-size: 1.1em; /* Aumentar texto del botón */
+    border-radius: 5px;
 }
 .form {
-    /*border: 1px dotted #e60404;*/
-    padding-top: 1%;
-    padding-left: 2%;
-    padding-bottom: 2%;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff; /* Opcional: mejor contraste */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gabonak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Usar el 100% del viewport */
+    padding: 20px;
+    background: url('../irudiak/patroia3.jpg') repeat;
+    background-size: 25px 25px;
+    color: white;
+    text-shadow: #000;
+}
+
+.form {
+    padding: 9%; /* Espaciado interno */
     background: url('../irudiak/patroia3.jpg');
     background-size: 25px, 25px;
     background-repeat: repeat;
     color: #fffdfd;
     text-shadow: 1px 1px 2px #333;
-    border-radius: 1%;
-    border-color: #ddd;
-    box-shadow:1px 1px 30px  #333 ;
+    border-radius: 10px; /* Bordes redondeados más visibles */
+    border: 1px solid #ddd; /* Borde más claro */
+    box-shadow: 1px 1px 30px #333;
     text-align: center;
+    align-items: center; /* Centra verticalmente */
+    /* Tamaño del formulario */
+    width: 100%; /* Para dispositivos pequeños */
+    max-width: 500px; /* Tamaño máximo */
+    min-height: 400px; /* Altura mínima */
 }
-.form input {
+
+form {
+    border: 1px solid #ccc;
+ 
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+form input, form select, form textarea, label, select, input {
     display: block;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form input {
     padding: 8px;
     border: 1px solid #ac4e4e;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     border-radius: 4px;
-    color: #000000;
+    color: #000;
 }
+
 .form label {
-    margin-bottom: 5px;
     font-weight: bold;
 }
+
 .btn {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #000;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
 }
 
-.footer {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: gray;
+footer{
+    border: 1px dashed black;
+    margin: 1.968503937007874015748031496063%;
+    padding: 1.968503937007874015748031496063%;
+    width: 91.863517060367454068241469816273%;
+    clear: left;
+    background-color: azure;
 }
 
-.gabonak {
-    /*border: 1px dotted #e60404;*/
-    padding-top: 1%;
-    padding-left: 2%;
-    padding-bottom: 2%;
-    background: url('../irudiak/patroia3.jpg');
-    background-size: 25px, 25px;
-    background-repeat: repeat;
-    color: #fffdfd;
-    text-shadow: 1px 1px 2px #333;
-    border-radius: 1%;
-    border-color: #ddd;
-    box-shadow:1px 1px 30px  #333 ;
-}
-
-form {
-    border: 1px solid #ccc;
+.details {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Dos columnas: etiquetas y valores */
+    gap: 10px; /* Espacio entre filas y columnas */
+    background-color: #f9f9f9;
     padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
-    margin: 0 auto; /* Centra horizontalmente */
-    display: flex; /* Habilita flexbox */
-    flex-direction: column; /* Alinea los elementos en columna */
-    align-items: center; /* Centra horizontalmente los elementos hijos */
+    border-radius: 8px;
+    color:black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
 }
-form input, form select, form textarea {
-    width: 100%; /* Ocupar todo el ancho del contenedor */
-    max-width: 400px; /* Limitar el ancho máximo */
-    box-sizing: border-box; /* Incluir el padding y el borde dentro del ancho total */
+.small-img {
+    width: 50%; /* Ajusta el ancho al 50% del contenedor */
+    max-width: 300px; /* Tamaño máximo para pantallas grandes */
+    display: block; /* Asegura que se comporte como un bloque */
+    margin: 0 auto; /* Centrado horizontal */
+    border-radius: 10px; /* Opcional: redondear bordes */
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que ocupe el espacio disponible */
+    text-align: center; /* Centra el contenido de texto si lo hay */
+}
+
+.details div {
+    padding: 5px;
+    border-bottom: 1px solid #ddd; /* Línea separadora entre filas */
+}
+
+.details div:last-child {
+    border-bottom: none; /* Quita la línea de la última fila */
 }
 
 
-label, select, input {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
+button.btn, .btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;}
+    
+    button.btn:hover, .btn:hover {
+        background-color: #218838;
+    }
+    

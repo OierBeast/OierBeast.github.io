@@ -1,18 +1,16 @@
 
             * {margin: 0; padding: 0;} 
             body {
-                border: 1px dashed black;
+              
 				max-width: 762px;
                 margin: auto;
                 height: 100vh;  
                 background: url('../irudiak/Gabonak\ fondo.PNG');
-                background-size:cover;
-                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed; /* Hace que el fondo se mantenga fijo mientras haces scroll */
                 background-position: center;
-                overflow: scroll;
-
-                
-               
+                overflow-y: auto;
+                overflow-x: hidden;
         
     font-family: Arial, sans-serif;
     color: #333;
@@ -92,25 +90,36 @@
                 }
                 
             }
-
-            nav{
-                border: 1px dashed rgb(0, 0, 0);
+            header {
+                border: 2px solid #2e68139a;
+                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+                margin: 2%;
+                margin-bottom: 3%;
+                padding: 2%;
+                width: 95%;
+                height: 5%;
+                color: white;
+                background-color: #74d680;
+            }
+            
+            
+            /* Estilos para el menú de navegación */
+            nav {
                 
-				margin-bottom: 0.168503937007874015748031496063%;
-				
-                padding: 1.968503937007874015748031496063%;
+                margin-bottom: 1%;
+                padding: 2%;
                 width: 96%;
                 background-color: #8ae262;
-               
-				li{
-					
-					display: inline;
-					margin: 0.65616797900262467191601049868766%;
-               
-				}
-               
+                border: 2px solid #2e68139a;
+                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+            
             }
-
+            
+            nav li {
+                display: inline;
+                margin: 1%;
+            }
+            
 			aside{
 				border: 1px dashed rgb(0, 0, 0);
 				float: right;
@@ -120,7 +129,7 @@
 				
 			}
 			
-			footer{
+            footer{
                 border: 1px dashed black;
                 margin: 1.968503937007874015748031496063%;
                 padding: 1.968503937007874015748031496063%;

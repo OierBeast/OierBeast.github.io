@@ -11,7 +11,8 @@ body {
     max-width: 762px;
     margin: auto;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: auto; /* Activa la barra de desplazamiento vertical */
+    overflow-x: hidden; /* Evita la barra horizontal si no es necesaria */
 }
 
 header {
@@ -24,41 +25,65 @@ h1 {
     text-align: center;
 }
 
-nav {
-    background-color: #8ae262;
-    padding: 1.968503937007874015748031496063%;
-    margin-bottom: 20px;
+header {
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin: 2%;
+    margin-bottom: 3%;
+    padding: 2%;
+    width: 95%;
+    height: 5%;
+    color: white;
+    background-color: #74d680;
 }
 
-nav ul {
-    list-style-type: none;
+
+/* Estilos para el menú de navegación */
+nav {
+    
+    margin-bottom: 1%;
+    padding: 2%;
+    width: 96%;
+    background-color: #8ae262;
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
 }
 
 nav li {
     display: inline;
-    margin: 0.65%;
+    margin: 1%;
 }
-
 main {
+    
     text-align: center;
+    color: azure;
+    border: 2px solid #2e68139a; /* Borde solicitado */
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    margin: 10px auto; /* Mantiene centrado */
+    padding: 20px;
     background-color: #378b29;
-    padding: 2%;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+    width: 90%;
+    background-image: url('../irudiak/patroia50.jpg'); /* Patrón repetido */
+    background-size: 50px 50px;
+    background-repeat: repeat;
 }
 
 .flex-container {
-    display: flex; /* Usar flexbox para alinear horizontalmente */
-    align-items: flex-start; /* Alineación vertical */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     gap: 20px; /* Espacio entre la imagen y el texto */
-    margin: 40px 0;
+    margin: 40px auto;
 }
-
 .flex-container img {
-    width: 30%; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Mantén las proporciones */
+    width: 36%; /* Aumenta el ancho al 80% del contenedor */
+    max-width: none; /* Elimina cualquier límite de tamaño */
+    height: auto; /* Mantén proporciones */
+    border-radius: 5%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 /* Estilos para el texto */
 .Testua {
@@ -89,4 +114,12 @@ img {
 border-radius: 1%;
 max-width: 10%;
 height: auto;
+}
+footer{
+    border: 1px dashed black;
+    margin: 1.968503937007874015748031496063%;
+    padding: 1.968503937007874015748031496063%;
+    width: 91.863517060367454068241469816273%;
+    clear: left;
+    background-color: azure;
 }
