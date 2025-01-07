@@ -1,43 +1,49 @@
 body {
     border: 1px dashed black;
-				max-width: 762px;
-                margin: auto;
-                height: 100vh;
-                background: url('../irudiak/Gabonak\ fondo.PNG');
-                background-size:cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                overflow: hidden;
+    max-width: 762px;
+    margin: auto;
+    height: 100vh;
+    background: url('../irudiak/Gabonak fondo.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
+
 .header {
     background-color: #f8f8f8;
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
 }
+
 header {
     border: 1px dashed black;
     margin: 1.968503937007874015748031496063%;
     padding: 1.968503937007874015748031496063%;
-    width: 090.863517060367454068241469816273%;
+    width: 90.863517060367454068241469816273%;
     height: 50px;
     color: azure;
     background-color: #74d680;
-    h1 {                 
-        position: absolute;
-        display: inline-block;
-        margin-left: 0.968503937007874015748031496063%;  
-    }
 }
+
+header h1 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 0.968503937007874015748031496063%;
+}
+
 .header h1 {
     margin: 0;
     display: inline-block;
 }
+
 .header a {
     float: right;
     color: blue;
     text-decoration: none;
     margin-top: 10px;
 }
+
 nav {
     background-color: #8ae262;
     padding: 1.968503937007874015748031496063%;
@@ -53,35 +59,43 @@ nav li {
     margin: 0.65%;
 }
 
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
 .menu {
     background-color: #941212;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
+
 .menu a {
     margin-right: 15px;
     text-decoration: none;
     color: black;
 }
+
 .container {
     padding: 20px;
     background-image: url();
 }
+
 .form {
-    /*border: 1px dotted #e60404;*/
     padding-top: 1%;
     padding-left: 2%;
     padding-bottom: 2%;
     background: url('../irudiak/patroia3.jpg');
-    background-size: 25px, 25px;
+    background-size: 25px 25px;
     background-repeat: repeat;
     color: #fffdfd;
     text-shadow: 1px 1px 2px #333;
     border-radius: 1%;
     border-color: #ddd;
-    box-shadow:1px 1px 30px  #333 ;
-    text-align: center;
+    box-shadow: 1px 1px 30px #333;
 }
+
 .form input {
     display: block;
     width: 100%;
@@ -93,10 +107,12 @@ nav li {
     border-radius: 4px;
     color: #000000;
 }
+
 .form label {
     margin-bottom: 5px;
     font-weight: bold;
 }
+
 .btn {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -104,6 +120,27 @@ nav li {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.payment-method img {
+    height: 40px;
+    margin-left: 10px;
+}
+
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .footer {
@@ -116,39 +153,49 @@ nav li {
 }
 
 .gabonak {
-    /*border: 1px dotted #e60404;*/
     padding-top: 1%;
     padding-left: 2%;
     padding-bottom: 2%;
     background: url('../irudiak/patroia3.jpg');
-    background-size: 25px, 25px;
+    background-size: 25px 25px;
     background-repeat: repeat;
     color: #fffdfd;
     text-shadow: 1px 1px 2px #333;
     border-radius: 1%;
     border-color: #ddd;
-    box-shadow:1px 1px 30px  #333 ;
+    box-shadow: 1px 1px 30px #333;
 }
 
-form {
-    border: 1px solid #ccc;
+h1 {
+    margin-top: 20px;
+}
+
+.section {
+    margin: 20px 0;
     padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
-    margin: 0 auto; /* Centra horizontalmente */
-    display: flex; /* Habilita flexbox */
-    flex-direction: column; /* Alinea los elementos en columna */
-    align-items: center; /* Centra horizontalmente los elementos hijos */
-}
-form input, form select, form textarea {
-    width: 100%; /* Ocupar todo el ancho del contenedor */
-    max-width: 400px; /* Limitar el ancho máximo */
-    box-sizing: border-box; /* Incluir el padding y el borde dentro del ancho total */
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 
-label, select, input {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

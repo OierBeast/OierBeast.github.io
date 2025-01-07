@@ -4,69 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denda - Eskaria</title>
+    <link rel="stylesheet" href="css/erosten2.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        header, footer {
-            text-align: center;
-        }
-        nav {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: blue;
-        }
-        form {
-            border: 1px solid #ccc;
-            padding: 20px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        label, select, input {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        button {
-            background-color: blue;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: darkblue;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 0.8em;
-        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Denda</h1>
     </header>
+
     <nav>
-        <a href="#">Hasiera</a>
-        <a href="#">Katalogoa</a>
-        <a href="#">Nobedadeak</a>
-        <a href="#">Eskaintzak</a>
-        <a href="#">Kontaktua</a>
+        <ul>
+            <li><a href="index.html">Hasiera</a></li>
+            <li><a href="katalogoa.html">Katalogoa</a></li>
+            <li><a href="nobedadeak.html">Nobedadeak</a></li>
+            <li><a href="kontaktua.html">Kontaktua</a></li>
+        </ul>
     </nav>
     <main>
+        <div class="container">
+       
+            <div class="form">
         <h2>Eskaria</h2>
         <form>
             <label for="mota">Mota:</label>
             <select id="mota" name="mota">
                 <option value="visa">Visa</option>
                 <option value="mastercard">MasterCard</option>
-                <option value="amex">Amex</option>
+                <option value="paypal">Paypal</option>
             </select>
 
             <label for="titularra">Titularra:</label>
@@ -79,22 +45,25 @@
             <select id="hilabetea" name="hilabetea">
                 <option value="01">01</option>
                 <option value="02">02</option>
-                <!-- Más meses -->
+                <!--Hileak -->
             </select>
             <select id="urtea" name="urtea">
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
-                <!-- Más años -->
+                <!--Urteak -->
             </select>
 
             <label for="cvc">CVC:</label>
             <input type="text" id="cvc" name="cvc">
 
-            <button type="submit">Eskaria bidali</button>
+            
         </form>
+        <button class="btn" onclick="window.location.href='erosten6.html'">Eskaria bidali</button>    
+    </div>
+</div>
     </main>
     <footer>
-        © 2020 Lea Artibai Ikastetxea
+        © 2024 HoH! Hoh! Hoh!
     </footer>
 </body>
 </html>
