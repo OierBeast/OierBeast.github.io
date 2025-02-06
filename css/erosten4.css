@@ -49,40 +49,24 @@ header h1 {
     text-decoration: none;
     margin-top: 10px;
 }
-nav {
-<<<<<<< HEAD
-    
-    margin-bottom: 1%;
-    padding: 2%;
-    width: 96%;
-    background-color: #8ae262;
-    border: 2px solid #2e68139a;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-
-=======
-    margin-bottom: 1%;
-    padding: 2%;
-    background-color: #8ae262;
-    border: 2px solid #2e68139a;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
->>>>>>> cfb4206 (Azkenaurrekoa)
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-
 nav li {
     display: inline;
     margin: 1%;
 }
-nav a, .menu a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-}
 
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size-adjust: calc();
+}
+nav ul {
+  list-style: none; /* Elimina los puntos de las listas */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Distribuye los elementos horizontalmente */
+  gap: 20px; /* Espaciado entre los elementos */
+}
 .menu {
     background-color: #941212;
     padding: 10px;

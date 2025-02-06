@@ -16,43 +16,47 @@ body {
 }
 
 header {
-    color: rgb(255, 255, 255);
-    background-color: #74d680;
-    padding: 2%;
-}
-
-h1 {
-    text-align: center;
-}
-
-header {
     border: 2px solid #2e68139a;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     margin: 2%;
     margin-bottom: 3%;
     padding: 2%;
-    width: 95%;
-    height: 5%;
-    color: white;
     background-color: #74d680;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
 
-/* Estilos para el menú de navegación */
+
 nav {
-    
-    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
     padding: 2%;
-    width: 96%;
     background-color: #8ae262;
     border: 2px solid #2e68139a;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-
 }
+
 
 nav li {
     display: inline;
     margin: 1%;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size-adjust: calc();
+}
+nav ul {
+  list-style: none; /* Elimina los puntos de las listas */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Distribuye los elementos horizontalmente */
+  gap: 20px; /* Espaciado entre los elementos */
 }
 main {
     
