@@ -82,7 +82,7 @@ body {
                     ;
                     text-align: center;
                     color: azure;
-                    border: 1px dashed rgb(0, 0, 0);
+                    border: 1px solid rgb(0, 0, 0);
                 
                 background-size:100px 100px;
                     padding: 1%;
@@ -129,7 +129,7 @@ nav ul {
             
 
 			aside{
-				border: 1px dashed rgb(0, 0, 0);
+				border: 1px solid rgb(0, 0, 0);
 				float: right;
 				padding: 1.968503937007874015748031496063%;
 				margin-right: 1.968503937007874015748031496063%;
@@ -175,7 +175,7 @@ nav ul {
                 text-align: justify;
                 padding: 2%;
                 color: azure;
-                border: 1px dashed rgb(0, 0, 0);
+                border: 1px solid rgb(224, 22, 22);
             background: url('../irudiak/patroia.jpg');
             background-size:100px 100px;
                
