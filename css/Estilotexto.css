@@ -1,0 +1,12 @@
+html {
+    font-size: 16px; /* Base */
+  }
+  
+  h1 {
+    font-size: clamp(2rem, 5vw, 4rem); /* Escala entre 2rem y 4rem */
+  }
+  
+  p {
+    font-size: clamp(1rem, 3vw, 2rem); /* Escala entre 1rem y 2rem */
+  }
+  

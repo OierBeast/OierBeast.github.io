@@ -1,0 +1,143 @@
+/* 🟢 Estilos generales */
+body {
+    max-width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    background: url('../irudiak/Gabonak\ fondo.PNG');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* 🟢 Contenedor Responsivo */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🟢 Formulario Responsivo */
+.form {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 🟢 Ajuste de Inputs */
+.form input, .form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* 🟢 Botón de Envío */
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* 🔴 MENÚ RESPONSIVO */
+nav {
+    background-color: #8ae262;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* 🔴 BOTÓN DE MENÚ HAMBURGUESA (SOLO EN MÓVILES) */
+.menu-toggle {
+    display: none;
+    background-color: #2e68139a;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* 🔵 📱 RESPONSIVIDAD PARA MÓVILES */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .form {
+        padding: 15px;
+    }
+
+    /* 📌 FORMULARIO EN PANTALLAS PEQUEÑAS */
+    .form input, .form textarea {
+        max-width: 100%;
+    }
+
+    /* 📌 MENÚ RESPONSIVO */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #8ae262;
+        padding: 10px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin: auto;
+    }
+}
+
+footer{
+    border: 1px solid rgb(231, 231, 231);
+    margin: 1.968503937007874015748031496063%;
+    padding: 1.968503937007874015748031496063%;
+    width: 91.863517060367454068241469816273%;
+    clear: left;
+    background-color: azure;
+}

@@ -115,8 +115,9 @@ border-radius: 1%;
 max-width: 10%;
 height: auto;
 }
+
 footer{
-    border: 1px dashed black;
+    border: 1px solid rgb(231, 231, 231);
     margin: 1.968503937007874015748031496063%;
     padding: 1.968503937007874015748031496063%;
     width: 91.863517060367454068241469816273%;

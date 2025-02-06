@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    background: url('../irudiak/Gabonak fondo.PNG') center/cover no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow: scroll;
+}
+
+/* Encabezado */
+header {
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin: 2%;
+    margin-bottom: 3%;
+    padding: 2%;
+    background-color: #74d680;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Menú de navegación */
+nav {
+    margin-bottom: 1%;
+    padding: 2%;
+    background-color: #8ae262;
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav li {
+    display: inline;
+    margin: 1%;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size-adjust: calc();
+}
+
+main {
+    text-align: center;
+    background-color: #378b29;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    background-image: url('../irudiak/patroia10.jpg');
+    background-size: 30px 30px;
+    background-repeat: repeat;
+}
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background-color: #3394cc;
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #e53333;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #cc1f00;
+  }
+  
+  .aside {
+    background-color: #e53333;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  footer{
+    border: 1px solid rgb(231, 231, 231);
+    margin: 1.968503937007874015748031496063%;
+    padding: 1.968503937007874015748031496063%;
+    width: 91.863517060367454068241469816273%;
+    clear: left;
+    background-color: azure;
+}
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  
+ img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+;
+display: block; /* Evita que la imagen tenga espacio adicional debajo */
+max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+height: auto; /* Mantiene las proporciones */
+margin: auto; /* Centra la imagen dentro del contenedor */
+border-radius: 5px;}

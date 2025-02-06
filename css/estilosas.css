@@ -1,31 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            * {margin: 0; padding: 0;} 
-            body {
             
-				max-width: 762px;
-                margin: auto;
-                height: 100vh;
-                background: url('../irudiak/Gabonak\ fondo.PNG');
-                background-size: cover;
-                background-attachment: fixed; /* Hace que el fondo se mantenga fijo mientras haces scroll */
-                background-position: center;
-                overflow-y: auto;
-                overflow-x: hidden;
-
-                
-               
-        
+body {
+    max-width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    background: url('../irudiak/Gabonak fondo.PNG') center/cover no-repeat;
     font-family: Arial, sans-serif;
     color: #333;
-                
-                /*background-image: url('img/padre.jpg');
-                background-size: auto;*/
-            }
-           
-           
+    overflow: scroll;
+}
             a{            
                 color:white;
             }
+
             header {
                 border: 2px solid #2e68139a;
                 box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
@@ -104,31 +96,37 @@
                 }
                 
             }
-            nav {
-    
-                margin-bottom: 1%;
-                padding: 2%;
-                width: 96%;
-                background-color: #8ae262;
-                border: 2px solid #2e68139a;
-                box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    padding: 2%;
+    background-color: #8ae262;
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+nav li {
+    display: inline;
+    margin: 1%;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size-adjust: calc();
+}
+nav ul {
+  list-style: none; /* Elimina los puntos de las listas */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Distribuye los elementos horizontalmente */
+  gap: 20px; /* Espaciado entre los elementos */
+}
             
-            }
-            
-            nav ul {
-                list-style-type: none;
-            }
-            
-            
-            nav li {
-                display: inline;
-                margin: 1%;
-            }
-            nav a, .menu a {
-                margin: 0 10px;
-                text-decoration: none;
-                color: black;
-            }
 
 			aside{
 				border: 1px dashed rgb(0, 0, 0);
@@ -138,9 +136,8 @@
 				width: 33.202099737532808398950131233596%;
 				
 			}
-			
 			footer{
-                border: 1px dashed black;
+                border: 1px solid rgb(231, 231, 231);
                 margin: 1.968503937007874015748031496063%;
                 padding: 1.968503937007874015748031496063%;
                 width: 91.863517060367454068241469816273%;

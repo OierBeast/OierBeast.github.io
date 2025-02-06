@@ -17,37 +17,51 @@ body {
     overflow-x: hidden;
 }
 
-/* Estilos para el encabezado */
+/* Encabezado */
 header {
     border: 2px solid #2e68139a;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     margin: 2%;
     margin-bottom: 3%;
     padding: 2%;
-    width: 95%;
-    height: 5%;
-    color: white;
     background-color: #74d680;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
 
 /* Estilos para el menú de navegación */
+
 nav {
-    
-    margin-bottom: 1%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
     padding: 2%;
-    width: 96%;
     background-color: #8ae262;
     border: 2px solid #2e68139a;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-
 }
+
 
 nav li {
     display: inline;
     margin: 1%;
 }
 
+nav li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size-adjust: calc();
+}
+nav ul {
+  list-style: none; /* Elimina los puntos de las listas */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Distribuye los elementos horizontalmente */
+  gap: 20px; /* Espaciado entre los elementos */
+}
 /* Estilos principales */
 main {
     text-align: center;
@@ -76,7 +90,7 @@ main section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 40px 0;
+    margin: 1% ;
 }
 
 main section img {
@@ -96,7 +110,10 @@ main section div {
     text-shadow: 1px 1px 5px #333;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
-
+.negra {
+    background: url('../irudiak/patroia6.jpg') center/100px 100px;
+    border:rgb(166, 58, 238) 1px solid;
+}
 /* Efectos de hover */
 .opari:hover,
 .negra:hover {
@@ -108,7 +125,7 @@ main section div {
     text-shadow: 1px 1px 5px #333;
     text-align: center;
     float: left;
-    margin-right: 1px;
+    margin-right: 1%;
     width: 100%;
     max-width: 600px;
     line-height: 1.1;
@@ -175,7 +192,7 @@ main section div {
 
 /* Estilos para el pie de página */
 footer{
-    border: 1px dashed black;
+    border: 1px solid rgb(231, 231, 231);
     margin: 1.968503937007874015748031496063%;
     padding: 1.968503937007874015748031496063%;
     width: 91.863517060367454068241469816273%;

@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
   
     max-width: 762px;
@@ -7,8 +13,12 @@ body {
     background-size: cover;
     background-attachment: fixed; /* Hace que el fondo se mantenga fijo mientras haces scroll */
     background-position: center;
+<<<<<<< HEAD
     overflow-y: auto;
     overflow-x: hidden;
+=======
+ 
+>>>>>>> cfb4206 (Azkenaurrekoa)
 }
 
 header, .header {
@@ -21,9 +31,14 @@ header, .header {
     color: azure;
 }
 
+<<<<<<< HEAD
 header h1, .header h1 {
     margin: 0;
     position: absolute;
+=======
+header h1 {
+  
+>>>>>>> cfb4206 (Azkenaurrekoa)
     display: inline-block;
     margin-left: 0.9685%;
 }
@@ -35,6 +50,7 @@ header h1, .header h1 {
     margin-top: 10px;
 }
 nav {
+<<<<<<< HEAD
     
     margin-bottom: 1%;
     padding: 2%;
@@ -43,6 +59,13 @@ nav {
     border: 2px solid #2e68139a;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 
+=======
+    margin-bottom: 1%;
+    padding: 2%;
+    background-color: #8ae262;
+    border: 2px solid #2e68139a;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+>>>>>>> cfb4206 (Azkenaurrekoa)
 }
 
 nav ul {
@@ -140,14 +163,7 @@ form input, form select, form textarea {
     text-decoration: none;
 }
 
-footer{
-    border: 1px dashed black;
-    margin: 1.968503937007874015748031496063%;
-    padding: 1.968503937007874015748031496063%;
-    width: 91.863517060367454068241469816273%;
-    clear: left;
-    background-color: azure;
-}
+
 
 h1 {
     margin-top: 20px;
@@ -161,7 +177,7 @@ h1 {
 }
 
 footer{
-    border: 1px dashed black;
+    border: 1px solid rgb(231, 231, 231);
     margin: 1.968503937007874015748031496063%;
     padding: 1.968503937007874015748031496063%;
     width: 91.863517060367454068241469816273%;
