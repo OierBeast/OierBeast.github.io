@@ -16,6 +16,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
+              
 
 header {
     border: 2px solid #2e68139a;
@@ -26,7 +27,7 @@ header {
     background-color: #74d680;
     color: white;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: %;
 }
 
 
@@ -60,22 +61,6 @@ nav ul {
   display: flex; /* Distribuye los elementos horizontalmente */
   gap: 20px; /* Espaciado entre los elementos */
 }
-/* Estilos principales */
-main {
-    text-align: center;
-    color: azure;
-    border: 2px solid #2e68139a;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-    margin: 10px auto; /* Mantiene centrado */
-    padding: 20px;
-    float: none; /* Para evitar problemas con floats */
-    background-color: #378b29;
-    width: 90%; /* Más grande para coincidir con el body */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    background-image: url('../irudiak/patroia10.jpg');
-    background-size: 30px 30px;
-    background-repeat: repeat;
-}
 aside {
 
     float: right;
@@ -83,6 +68,19 @@ aside {
     margin: 20px;
     width: 25%; /* Más grande para destacarse */
     background-color: #8ae262;
+}
+
+main {
+    text-align: center;
+    color: azure;
+    border: 2px solid #2e68139a; /* Borde del primer bloque */
+    margin: 10px 0 2%; /* Márgenes del segundo bloque */
+    padding: 2%; /* Padding del segundo bloque */
+    background-color: #378b29;
+    width: 96%; /* Ancho del segundo bloque */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    background: url('../irudiak/patroia50.jpg') repeat;
+    background-size: 50px 50px; /* Patrón más repetido */
 }
 main section {
     display: flex;
@@ -104,7 +102,7 @@ main section div {
     padding: 2%;
     font-size: 14px;
     border:rgb(238, 58, 58) 1px solid;
-    border-radius: 2%;
+    border-radius: 1%;
     text-shadow: 1px 1px 5px #333;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
