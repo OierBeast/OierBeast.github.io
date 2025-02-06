@@ -13,12 +13,8 @@ body {
     background-size: cover;
     background-attachment: fixed; /* Hace que el fondo se mantenga fijo mientras haces scroll */
     background-position: center;
-<<<<<<< HEAD
     overflow-y: auto;
     overflow-x: hidden;
-=======
- 
->>>>>>> cfb4206 (Azkenaurrekoa)
 }
 
 header, .header {
@@ -31,14 +27,9 @@ header, .header {
     color: azure;
 }
 
-<<<<<<< HEAD
 header h1, .header h1 {
     margin: 0;
     position: absolute;
-=======
-header h1 {
-  
->>>>>>> cfb4206 (Azkenaurrekoa)
     display: inline-block;
     margin-left: 0.9685%;
 }
