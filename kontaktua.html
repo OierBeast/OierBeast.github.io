@@ -1,67 +1,60 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="eu">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasiera</title>
-    <link rel="stylesheet" href="css/Kontaktua.css">
-		<!doctype html>
-	</head>
-	<body>
+    <title>Kontaktua</title>
+    <link rel="stylesheet" href="css/erosten2.css">
+</head>
+<body>
+    <header>
+        <h1>HoH! Hoh! Hoh!</h1>
+    </header>
     
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Hasiera</a></li>
+            <li><a href="katalogoa.html">Katalogoa</a></li>
+            <li><a href="nobedadeak.html">Nobedadeak</a></li>
+
+            <li><a href="kontaktua.html">Kontaktua</a></li>
+        </ul>
+    
+    </nav>
+
+    <div class="container">
+        <div class="form">
+            <h1>Kontaktua</h1>
+            <h3>Zure datuak</h3>
+
+            <form action="kontaktua.php" method="post">
+                <label for="izena">Izena:</label>
+                <input type="text" id="izena" name="izena" required>
+
+                <label for="abizena">Abizena:</label>
+                <input type="text" id="abizena" name="abizena" required>
+
+                <label for="email">E-maila:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefonoa">Telefonoa:</label>
+                <input type="tel" id="telefonoa" name="telefonoa" pattern="[0-9]{9}" placeholder="Ej: 612345678" required>
+
+                <label for="helbidea">Helbidea:</label>
+                <input type="text" id="helbidea" name="helbidea">
+
+                <label for="mezua">Mezua:</label>
+                <textarea id="mezua" name="mezua" rows="4" placeholder="Idatzi hemen zure mezua..." required></textarea>
+
+                <button class="btn" onclick="window.location.href='kontaktua2.html'">Bidali</button> 
+            </form>        
         </div>
-		<header>
-			
-			<h1>HoH! Hoh! Hoh!</h1>
-		</header>
-		
-		<nav>
-			<ul>
-				<li><a href="index.html">Hasiera</a></li>
-				<li><a href="katalogoa.html">Katalogoa</a></li>
-				<li><a href="nobedadeak.html">Nobedadeak</a></li>
-			
-				<li><a href="kontaktua.html">Kontaktua</a></li>
-			</ul>
-		</nav>
-    <main>
-        <h2>Kontaktua</h2>
-        
-       
-          <div class="">
-            <img src="irudiak/denda.jpg">
-            <h1 class="Testua">¿Non aurki dezakezu gure denda? 
-          </div>
-          
-                <h3 class="Testua">
-                    <br>Arazo gehienak posta elektroniko bitartez konpontzen ditugu. Zure arazoa pertsonalagoa bada denda fisikoa  ere dugu, Bilbon aurki dezakezu. 
-                    <br><BR> Posta elektronikoa:
-                    <h2 class="Helbidea"> hoh-hoh-hoh@hotmail.com</h2>
-                    <h3 class="Testua">
-                    <br>Helbidea:
-               <h2 class="Helbidea">Ledesma Kalea, 12, 48001 Bilbo, Bizkaia, Euskal Herria</h2>   
-               <h3 class="Testua">
-                <br>Telefono-zenbakia:
-           <h2 class="Helbidea">+34 688 68 58 06</h2>   
-          
-               
-                   <br> 
-                   
-                </h3>
+    </div>
 
-               
-             
-                
-         
-
-
-           </h1>
-        
-        </section>
-        
-    </main>
     <footer>
         <p>&copy; 2024 HoH! Hoh! Hoh!</p>
     </footer>
+
+    
 </body>
 </html>
